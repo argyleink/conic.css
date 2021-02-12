@@ -1,0 +1,77 @@
+:root {
+  --surface: lch(10 0 0);
+  --text: lch(80 0 0);
+  --brand: lch(64 40 347);
+
+  @media (prefers-color-scheme: light) {
+    --surface: lch(98 0 0);
+    --text: lch(30 0 0);
+    --brand: lch(65 64 350);
+
+    @media (dynamic-range: high) {
+      --brand: color(display-p3 1 0 1);
+    }
+  }
+}
+
+::selection {
+  background-color: var(--brand);
+}
+
+html {
+  block-size: 100%;
+  inline-size: 100%;
+}
+
+body {
+  min-block-size: 100%;
+  min-inline-size: 100%;
+
+  margin: 0;
+  box-sizing: border-box;
+
+  display: grid;
+  place-content: center;
+  gap: 2ch;
+
+  background: var(--surface);
+  color: var(--text);
+  font-family: system-ui, sans-serif;
+}
+
+@media (orientation: landscape) {
+  body {
+    grid-auto-flow: column;
+  }
+}
+
+body,p,ul,dl,dd,dt,figure,
+h1,h2,h3,h4,h5,h6,small {
+  margin: 0;
+}
+
+a {
+  color: var(--brand);
+  color: color(display-p3 0 .5 1);
+
+  &:visited {
+    color: color(display-p3 .5 0 1);
+  }
+}
+
+h1,h2,h3,h4,h5,h6 {
+  line-height: 1.5;
+  max-inline-size: 25ch;
+}
+
+p {
+  line-height: 2;
+  font-size: 1.25rem;
+  font-weight: 300;
+  max-inline-size: 45ch;
+}
+
+main {
+  text-align: center;
+  margin-top: 60px;
+}
