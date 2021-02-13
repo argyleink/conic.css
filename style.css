@@ -1,3 +1,5 @@
+@import url("./conic-gradients.css");
+
 :root {
   --surface: lch(10 0 0);
   --text: lch(80 0 0);
@@ -31,18 +33,19 @@ body {
   box-sizing: border-box;
 
   display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(0px,100%), 320px));
   place-content: center;
-  gap: 2ch;
+  gap: 10vmin;
+  padding: 10vmin;
 
-  background: var(--surface);
+  background: conic-gradient(
+    from -270deg at bottom left,
+    hsl(200 15% 15%),
+    hsl(0 0% 2%)
+  ) border-box fixed;
+
   color: var(--text);
   font-family: system-ui, sans-serif;
-}
-
-@media (orientation: landscape) {
-  body {
-    grid-auto-flow: column;
-  }
 }
 
 body,p,ul,dl,dd,dt,figure,
@@ -71,7 +74,51 @@ p {
   max-inline-size: 45ch;
 }
 
-main {
-  text-align: center;
-  margin-top: 60px;
+figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  gap: 1ch;
+
+  & > figcaption {
+    padding-inline-start: 1ch;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3ch;
+  }
+}
+
+.conic-swatch {
+  --swatch-border: 5px;
+
+  border-radius: 25px;
+  border: var(--swatch-border) solid hsl(0 0% 100% / 25%);
+  aspect-ratio: 4/4;
+  box-shadow: 0 20px 100px -30px var(--shadow, gray);
+
+  @media (orientation: landscape) {
+    & {
+      aspect-ratio: 16/9;
+    }
+  }
+}
+
+mini-swatch {
+  display: flex;
+  gap: 1ch;
+
+  & > i {
+    flex-shrink: 0;
+    width: 2ch;
+    aspect-ratio: 1/1;
+    background-color: var(--color, transparent);
+    clip-path: ellipse();
+  }
+}
+
+small {
+  display: inline-block;
+  max-inline-size: 25ch;
+  line-height: 1.5;
 }
