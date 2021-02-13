@@ -89,6 +89,23 @@ figure {
   }
 }
 
+header {
+  background: linear-gradient(
+    to right, 
+    hsl(98 100% 62%), 
+    hsl(204 100% 59%)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h1 {
+  font-size: 5rem;
+  letter-spacing: -0.05em;
+  font-weight: lighter;
+  line-height: 1;
+}
+
 .conic-swatch {
   --swatch-border: 5px;
 
