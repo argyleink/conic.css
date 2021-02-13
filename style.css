@@ -33,7 +33,7 @@ body {
   box-sizing: border-box;
 
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(0px,100%), 320px));
+  grid-template-columns: repeat(auto-fill, minmax(min(1px,100%), 320px));
   place-content: center;
   gap: 10vmin;
   padding: 10vmin;
