@@ -1,0 +1,20 @@
+.gradients {
+  --widest: 480px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(1px,100%), var(--widest)));
+  place-content: center;
+  gap: 10vmin;
+  padding: 5vmin;
+
+  @media (width > 480px) {
+    & { --widest: 190px; }
+  }
+
+  @media (width > 845px) {
+    & {
+      --widest: 320px;
+      padding: 10vmin;
+    }
+  }
+}
