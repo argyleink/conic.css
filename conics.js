@@ -1,6 +1,6 @@
- // colors: [],
- // gradient: ``,
- // shadow: '',
+// colors: [],
+// gradient: ``,
+// shadow: '',
 
 const CONICS = [
   {
@@ -20,6 +20,15 @@ const CONICS = [
       rebeccapurple
     ) border-box;`,
     shadow: 'cyan',
+  },
+  {
+    colors: ['lightblue', 'white'],
+    gradient: `conic-gradient(
+        from 180deg at bottom center,
+        lightblue, 
+        white
+      ) border-box;`,
+    shadow: 'lightblue',
   },
   {
     colors: ['deeppink', 'cyan'],
@@ -76,7 +85,7 @@ const CONICS = [
     ) border-box;`,
     shadow: 'orange',
   },
-   {
+  {
       colors: ['lime', 'cyan'],
       gradient: `conic-gradient(
         from 180deg at center left,
@@ -84,7 +93,25 @@ const CONICS = [
         cyan
       ) border-box;`,
       shadow: 'cyan',
-   },
+  },
+  {
+    colors: ['blue', 'blueviolet'],
+    gradient: `conic-gradient(
+        from -90deg at top center,
+        blue, 
+        blueviolet
+      ) border-box;`,
+    shadow: 'blue',
+  },
+  {
+    colors: ['darkseagreen', 'darkslategray'],
+    gradient: `conic-gradient(
+        from 180deg at top right,
+        darkseagreen, 
+        darkslategray
+      ) border-box;`,
+    shadow: 'darkseagreen',
+  },
 ]
 
 export default CONICS
