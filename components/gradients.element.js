@@ -6,15 +6,9 @@ export default class ConicGradients extends HTMLElement {
   constructor() {
     super()
     this.classList.add(gradients)
-    this.innerHTML = this.render()
-  }
-
-  connectedCallback() {}
-  disconnectedCallback() {}
-
-  render() {
-    return `${CONICS.map((conic, i) => 
-      `<conic-gradient conic-id="${i}"></conic-gradient>`).join('').replace(/\s+/g, ' ')}`
+    this.innerHTML = `${CONICS.map((conic, i) => 
+      `<conic-gradient conic-id="${i}"></conic-gradient>`)
+    .join('').replace(/\s+/g, ' ')}`
   }
 }
 

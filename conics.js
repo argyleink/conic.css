@@ -1,7 +1,3 @@
-// colors: [],
-// gradient: ``,
-// shadow: '',
-
 const CONICS = [
   {
     colors: ['deeppink', 'rebeccapurple'],

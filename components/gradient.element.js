@@ -28,10 +28,10 @@ export default class ConicGradient extends HTMLElement {
             <span class="${miniSwatch}">
               <i style="--color:${color};"></i> ${color}
             </span>
-          `).join('').replace(/\s+/g, ' ')}
+          `).join('')}
         </figcaption>
       </figure>
-    `
+    `.replace(/\s+/g, ' ')
   }
 }
 
