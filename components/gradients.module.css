@@ -7,14 +7,14 @@
   gap: 10vmin;
   padding: 5vmin;
 
-  @media (width > 480px) {
-    & { --widest: 190px; }
+  @media (width > 600px) {
+    & { --widest: 240px; }
   }
 
   @media (width > 845px) {
     & {
       --widest: 320px;
-      padding: 10vmin;
+      padding: 10vmin 5vmin;
     }
   }
 
@@ -23,6 +23,6 @@
   }
 
   &:hover > :not(:hover) {
-    opacity: .5;
+    opacity: .35;
   }
 }
