@@ -84,24 +84,34 @@ figure {
   }
 }
 
+@property --conicAngle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
 header {
   display: grid;
-  place-content: center;
+  place-items: center;
   padding: 15vmin 5vmin 5vmin;
 
   & > h1 {
-    background: linear-gradient(
-      to right, 
-      hsl(98 100% 62%), 
-      hsl(204 100% 59%)
-    );
+    background: conic-gradient(from var(--conicAngle) at top center, rebeccapurple, lime, blue, rebeccapurple) border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    animation: magic 5s linear infinite;
+  }
+}
+
+@keyframes magic {
+  50% {
+    --conicAngle: 360deg;
   }
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: max(min(15vw, 15vh), 6rem);
   font-weight: lighter;
   line-height: 1;
 }
