@@ -1,4 +1,4 @@
-import confetti from 'https://cdn.skypack.dev/canvas-confetti';
+import confetti from 'canvas-confetti'
 import Noty from 'noty'
 import { conicSwatch, miniSwatch } from './gradient.module.css'
 import CONICS from '../conics.js'
@@ -18,7 +18,12 @@ export default class ConicGradient extends HTMLElement {
 
   connectedCallback() {
     this.addEventListener('click', e => {
-      this.copyToClipboard(this.conic.background)
+      this.copyToClipboard(
+        this.conic.gradient
+          .trim()
+          .replace(/\s+/g, ' ')
+          .replace(' from', 'from')
+          .replace(' )', ')'))
 
       new Noty({
         text: "conic gradient CSS copied!",

@@ -17,4 +17,12 @@
       padding: 10vmin;
     }
   }
+
+  & > * {
+    transition: opacity 1s ease;
+  }
+
+  &:hover > :not(:hover) {
+    opacity: .5;
+  }
 }
