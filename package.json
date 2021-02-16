@@ -12,7 +12,9 @@
     "build": "vite build",
     "serve": "vite preview"
   },
-  "dependencies": {},
+  "dependencies": {
+    "noty": "^3.2.0-beta-deprecated"
+  },
   "devDependencies": {
     "postcss-easings": "3.x",
     "postcss-preset-env": "6.7.x",

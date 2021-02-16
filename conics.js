@@ -1,6 +1,7 @@
 const CONICS = [
   {
     colors: ['deeppink', 'rebeccapurple'],
+    hex: ['#ff1493', '#639'],
     gradient: `conic-gradient(
       from 180deg at bottom left,
       deeppink,
@@ -10,6 +11,7 @@ const CONICS = [
   },
   {
     colors: ['cyan', 'rebeccapurple'],
+    hex: ['#0ff', '#639'],
     gradient: `conic-gradient(
       from 90deg at bottom right,
       cyan, 
@@ -19,6 +21,7 @@ const CONICS = [
   },
   {
     colors: ['lightblue', 'white'],
+    hex: ['#add8e6', '#fff'],
     gradient: `conic-gradient(
         from 180deg at bottom center,
         lightblue, 
@@ -28,6 +31,7 @@ const CONICS = [
   },
   {
     colors: ['deeppink', 'cyan'],
+    hex: ['#ff1493', '#0ff'],
     gradient: `conic-gradient(
       from 0deg at bottom left,
       deeppink, 
@@ -37,6 +41,7 @@ const CONICS = [
   },
   {
     colors: ['deeppink', 'cyan', 'rebeccapurple'],
+    hex: ['#ff1493', '#0ff', '#639'],
     gradient: `conic-gradient(
       from -180deg at bottom right,
       deeppink, 
@@ -46,7 +51,8 @@ const CONICS = [
     shadow: 'cyan',
   },
   {
-    colors: ['lime', 'cyan'],
+    colors: ['cyan', 'lime'],
+    hex: ['#0ff', '#0f0'],
     gradient: `conic-gradient(
       from 0deg at top right,
       lime, 
@@ -56,6 +62,7 @@ const CONICS = [
   },
   {
     colors: ['black', 'white'],
+    hex: ['#000', '#fff'],
     gradient: `conic-gradient(
       from -90deg at top left,
       black, 
@@ -65,6 +72,7 @@ const CONICS = [
   },
   {
     colors: ['slategray', 'white'],
+    hex: ['#708090', '#fff'],
     gradient: `conic-gradient(
       from 0deg at top right,
       slategray, 
@@ -74,6 +82,7 @@ const CONICS = [
   },
   {
     colors: ['white', 'orange'],
+    hex: ['#fff', '#ffa500'],
     gradient: `conic-gradient(
       from 180deg at 50% 110%,
       white, 
@@ -83,6 +92,7 @@ const CONICS = [
   },
   {
       colors: ['lime', 'cyan'],
+      hex: ['#0f0', '#0ff'],
       gradient: `conic-gradient(
         from 180deg at center left,
         lime, 
@@ -91,7 +101,8 @@ const CONICS = [
       shadow: 'cyan',
   },
   {
-    colors: ['blue', 'blueviolet'],
+    colors: ['blueviolet', 'blue'],
+    hex: ['#8a2be2', '#00f'],
     gradient: `conic-gradient(
         from -90deg at top center,
         blue, 
@@ -101,6 +112,7 @@ const CONICS = [
   },
   {
     colors: ['darkseagreen', 'darkslategray'],
+    hex: ['#8fbc8f', '#2f4f4f'],
     gradient: `conic-gradient(
         from 180deg at top right,
         darkseagreen, 

@@ -25,4 +25,8 @@
     border-radius: 50%;
     box-shadow: inset 0 0 0 1px hsl(0deg 0% 50% / 75%);
   }
+
+  @nest figcaption > &:nth-of-type(even) {
+    flex-direction: row-reverse;
+  }
 }

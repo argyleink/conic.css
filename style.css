@@ -1,11 +1,15 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css");
+
 :root {
   --surface: lch(10 0 0);
-  --text: lch(80 0 0);
+  --text: lch(95 0 0);
+  --text2: lch(80 0 0);
   --brand: lch(64 40 347);
 
   @media (prefers-color-scheme: light) {
     --surface: lch(98 0 0);
-    --text: lch(30 0 0);
+    --text: lch(10 0 0);
+    --text2: lch(30 0 0);
     --brand: lch(65 64 350);
 
     @media (dynamic-range: high) {
@@ -73,9 +77,9 @@ figure {
   gap: 1ch;
 
   & > figcaption {
-    padding-inline-start: 1ch;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 1ch 3ch;
   }
 }
@@ -83,7 +87,7 @@ figure {
 header {
   display: grid;
   place-content: center;
-  padding: 5vmin;
+  padding: 15vmin 5vmin 5vmin;
 
   & > h1 {
     background: linear-gradient(
@@ -103,6 +107,7 @@ h1 {
 }
 
 small {
+  color: var(--text2);
   display: inline-block;
   max-inline-size: 25ch;
   line-height: 1.5;
