@@ -96,16 +96,21 @@ header {
   padding: 15vmin 5vmin 5vmin;
 
   & > h1 {
-    background: conic-gradient(from var(--conicAngle) at top center, rebeccapurple, lime, blue, rebeccapurple) border-box;
+    background: conic-gradient(
+      from var(--conicAngle) at top center, 
+      white, blue, rebeccapurple, red, hotpink, white
+    ) border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    animation: magic 5s linear infinite;
+    @media (prefers-reduced-motion: no-preference) {
+      animation: magic 5s linear infinite forwards;
+    }
   }
 }
 
 @keyframes magic {
-  50% {
+  to {
     --conicAngle: 360deg;
   }
 }
@@ -121,4 +126,14 @@ small {
   display: inline-block;
   max-inline-size: 25ch;
   line-height: 1.5;
+  font-size: 1.25rem;
+  font-weight: 200;
+  animation: slide-up 1s ease forwards;
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(-1ex);
+  }
 }
