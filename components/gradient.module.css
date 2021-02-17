@@ -7,6 +7,12 @@
   transition: aspect-ratio .5s ease;
   box-shadow: 0 20px 100px -30px var(--shadow, gray);
 
+  &:focus {
+    outline-style: solid;
+    outline-offset: 1vmin;
+    outline-color: var(--shadow, gray);
+  }
+
   @media (orientation: landscape) {
     & {
       aspect-ratio: 16/9;
