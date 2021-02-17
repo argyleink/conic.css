@@ -19,11 +19,8 @@ export default class ConicGradient extends HTMLElement {
   connectedCallback() {
     this.addEventListener('click', e => {
       this.copyToClipboard(
-        this.conic.gradient
-          .trim()
-          .replace(/\s+/g, ' ')
-          .replace(' from', 'from')
-          .replace(' )', ')'))
+        this.cleanSyntax(
+          this.conic.gradient))
 
       new Noty({
         text: "conic gradient CSS copied!",
@@ -56,12 +53,20 @@ export default class ConicGradient extends HTMLElement {
     }
   }
 
+  cleanSyntax(conic) {
+    return conic
+      .trim()
+      .replace(/\s+/g, ' ')
+      .replace(' from', 'from')
+      .replace(' )', ')')
+  }
+
   render() {
     const { gradient, shadow, colors } = this.conic
 
     return `
       <figure>
-        <picture class="${conicSwatch}" style="background: ${gradient}; --shadow: ${shadow};"></picture>
+        <picture tabindex=0 class="${conicSwatch}" style="background: ${this.cleanSyntax(gradient)}; --shadow: ${shadow};"></picture>
         <figcaption>
           ${colors.map(color => `
             <span class="${miniSwatch}">
