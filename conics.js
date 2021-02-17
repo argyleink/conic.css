@@ -132,6 +132,83 @@ const CONICS = [
       ) border-box`,
     shadow: 'darkseagreen',
   },
+  {
+    colors: ['lightcyan', 'lightblue'],
+    hex: ['#e0ffff', '#add8e6'],
+    gradient: `
+      conic-gradient(
+        from 0deg at top right,
+        lightcyan, 
+        lightblue
+      ) border-box`,
+    shadow: 'lightcyan',
+  },
+  {
+    colors: ['orange', 'hotpink'],
+    hex: ['#ffa500', '#ff69b4'],
+    gradient: `
+      conic-gradient(
+        from -135deg at -10% center,
+        orange, 
+        hotpink
+      ) border-box`,
+    shadow: 'hotpink',
+  },
+  {
+    colors: ['white', 'orchid'],
+    hex: ['#fff', '#da70d6'],
+    gradient: `
+      conic-gradient(
+        from -90deg at 50% 105%,
+        white, 
+        orchid
+      ) border-box`,
+    shadow: 'orchid',
+  },
+  {
+    colors: ['red', 'blue'],
+    hex: ['#f00', '#00f'],
+    gradient: `
+      conic-gradient(
+        from -90deg at 25% 105%,
+        red, 
+        blue
+      ) border-box`,
+    shadow: 'blue',
+  },
+  {
+    colors: ['papayawhip', 'peachpuff'],
+    hex: ['#ffefd5', '#ffdab9'],
+    gradient: `
+      conic-gradient(
+        from -90deg at bottom center,
+        papayawhip, 
+        peachpuff
+      ) border-box`,
+    shadow: 'peachpuff',
+  },
+  {
+    colors: ['yellow', 'yellowgreen'],
+    hex: ['#ffff00', '#9acd32'],
+    gradient: `
+      conic-gradient(
+        from -270deg at 50% -5%,
+        yellow, 
+        yellowgreen
+      ) border-box`,
+    shadow: 'yellowgreen',
+  },
+  {
+    colors: ['sienna', 'purple'],
+    hex: ['#a0522d', '#800080'],
+    gradient: `
+      conic-gradient(
+        from -270deg at top,
+        sienna, 
+        purple
+      ) border-box`,
+    shadow: 'purple',
+  },
 ]
 
 export default CONICS
