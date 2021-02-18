@@ -67,7 +67,7 @@ const CONICS = [
     shadow: 'cyan',
   },
   {
-    colors: ['black', 'white'],
+    colors: ['white', 'black'],
     hex: ['#000', '#fff'],
     gradient: `
       conic-gradient(
@@ -115,7 +115,7 @@ const CONICS = [
     hex: ['#8a2be2', '#00f'],
     gradient: `
       conic-gradient(
-        from -90deg at top center,
+        from -90deg at 50% -10%,
         blue, 
         blueviolet
       ) border-box`,
@@ -144,7 +144,7 @@ const CONICS = [
     shadow: 'lightcyan',
   },
   {
-    colors: ['orange', 'hotpink'],
+    colors: ['hotpink', 'orange'],
     hex: ['#ffa500', '#ff69b4'],
     gradient: `
       conic-gradient(
@@ -188,7 +188,7 @@ const CONICS = [
     shadow: 'peachpuff',
   },
   {
-    colors: ['yellow', 'yellowgreen'],
+    colors: ['yellowgreen', 'yellow'],
     hex: ['#ffff00', '#9acd32'],
     gradient: `
       conic-gradient(
@@ -199,11 +199,11 @@ const CONICS = [
     shadow: 'yellowgreen',
   },
   {
-    colors: ['sienna', 'purple'],
+    colors: ['purple', 'sienna'],
     hex: ['#a0522d', '#800080'],
     gradient: `
       conic-gradient(
-        from -270deg at top,
+        from -270deg at 50% -10%,
         sienna, 
         purple
       ) border-box`,
