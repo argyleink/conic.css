@@ -137,7 +137,12 @@ small {
   line-height: 1.5;
   font-size: 1.25rem;
   font-weight: 200;
-  animation: slide-up 1s ease forwards;
+
+  @media (prefers-reduced-motion: no-preference) {
+    & {
+      animation: slide-up 1s ease forwards;
+    }
+  }
 }
 
 aside {
@@ -162,6 +167,6 @@ aside {
 @keyframes slide-up {
   from {
     opacity: 0;
-    transform: translateY(-1ex);
+    transform: translateY(-.5ex);
   }
 }
