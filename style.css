@@ -21,10 +21,6 @@
   }
 }
 
-::selection {
-  background-color: var(--brand);
-}
-
 html {
   block-size: 100%;
   inline-size: 100%;

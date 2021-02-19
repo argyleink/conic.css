@@ -18,15 +18,9 @@ export default class ConicGradient extends HTMLElement {
 
   connectedCallback() {
     this.addEventListener('click', e => {
-      this.copyToClipboard(
-        this.cleanSyntax(
-          this.conic.gradient))
+      if (e.target.nodeName != 'PICTURE') return
 
-      new Noty({
-        text: "conic gradient CSS copied!",
-        timeout: 2000,
-        killer: true,
-      }).show()
+      this.copyConic()
 
       confetti({
         colors: this.conic.hex,
@@ -40,9 +34,26 @@ export default class ConicGradient extends HTMLElement {
         useWorker: true,
       })
     })
+    
+    this.addEventListener('keypress', e => {
+      if (e.key !== 'Enter') return
+      this.copyConic()
+    })
   }
 
   disconnectedCallback() {}
+
+  copyConic() {
+    this.copyToClipboard(
+      this.cleanSyntax(
+        this.conic.gradient))
+
+    new Noty({
+      text: "conic gradient CSS copied!",
+      timeout: 2000,
+      killer: true,
+    }).show()
+  }
 
   async copyToClipboard(text) {
     try {

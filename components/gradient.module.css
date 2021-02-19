@@ -6,8 +6,9 @@
   aspect-ratio: 1;
   transition: aspect-ratio .5s ease;
   box-shadow: 0 20px 100px -45px var(--shadow, gray);
+  cursor: pointer;
 
-  &:focus {
+  &:focus-visible {
     outline-style: solid;
     outline-offset: 1vmin;
     outline-color: var(--shadow, gray);
