@@ -18,7 +18,7 @@
     }
   }
 
-  @media (hover) {
+  /* @media (hover) {
     & > * {
       transition: opacity 1s ease;
     }
@@ -26,5 +26,5 @@
     &:hover > :not(:hover) {
       opacity: .35;
     }
-  }
+  } */
 }
