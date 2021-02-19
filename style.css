@@ -44,6 +44,16 @@ body {
     hsl(0 0% 2%)
   ) border-box fixed;
   font-family: system-ui, sans-serif;
+
+  @media (prefers-color-scheme: light) {
+    & {
+      background: conic-gradient(
+        from -270deg at bottom left,
+        hsl(200 15% 85%),
+        hsl(0 0% 98%)
+      ) border-box fixed;
+    }
+  }
 }
 
 body,p,ul,dl,dd,dt,figure,
