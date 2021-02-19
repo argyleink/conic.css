@@ -1,0 +1,52 @@
+:root .gist .blob-code-inner {
+  white-space: unset;
+}
+
+#file-conic-example-css-LC2 {
+  padding-inline-start: 4ch !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  /* Gist Embed - Dark Theme Styling - Thanks to MattD */
+  /* https://gist.github.com/Reelix/c92051efb62171e868daf57aaa1f9f88 */
+  
+  /* Body */
+  :root .gist-data tbody,
+  :root .gist .gist-meta,
+  :root .gist .gist-data { 
+    background-color: hsl(0 0% 10%); 
+  }
+
+  :root .gist .gist-file,
+  :root .gist .gist-data {
+    border: 1px solid hsl(0 0% 20%);
+    margin: 0;
+  }
+
+  /* Line Numbers */
+  .gist-data tbody td:nth-of-type(1) {
+    color: hsl(0 0% 20%) !important;
+  }
+
+  /* Code */
+  .gist-data tbody td:nth-of-type(2){
+    color: #FFFFFF !important;
+  }
+
+  /* Comments */
+  .pl-c
+  {
+    color: hsl(0 0% 50%) !important;
+  }
+
+  /* Function Name */
+  .pl-ent {
+    color: var(--brand) !important;
+  }
+  .pl-c1 {
+    color: hsl(188 50% 65%) !important;
+  }
+  .pl-en, .pl-smi {
+    color: hsl(267 60% 68%) !important;
+  }
+}

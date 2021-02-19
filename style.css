@@ -1,13 +1,16 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css");
+@import url("./components/gist.overrides.css");
 
 :root {
   --surface: lch(10 0 0);
+  --surface2: lch(5 0 0);
   --text: lch(95 0 0);
   --text2: lch(80 0 0);
   --brand: lch(64 40 347);
 
   @media (prefers-color-scheme: light) {
     --surface: lch(98 0 0);
+    --surface2: lch(92 0 0);
     --text: lch(10 0 0);
     --text2: lch(30 0 0);
     --brand: lch(65 64 350);
@@ -41,6 +44,16 @@ body {
     hsl(0 0% 2%)
   ) border-box fixed;
   font-family: system-ui, sans-serif;
+
+  @media (prefers-color-scheme: light) {
+    & {
+      background: conic-gradient(
+        from -270deg at bottom left,
+        hsl(200 15% 85%),
+        hsl(0 0% 98%)
+      ) border-box fixed;
+    }
+  }
 }
 
 body,p,ul,dl,dd,dt,figure,
@@ -97,14 +110,14 @@ header {
 
   & > h1 {
     background: conic-gradient(
-      from var(--conicAngle) at top center, 
+      from var(--conicAngle) at 50% -200%, 
       white, blue, rebeccapurple, red, hotpink, white
     ) border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
     @media (prefers-reduced-motion: no-preference) {
-      animation: magic 5s linear infinite forwards;
+      animation: magic 7s ease infinite forwards;
     }
   }
 }
@@ -116,7 +129,7 @@ header {
 }
 
 h1 {
-  font-size: max(min(15vw, 15vh), 6rem);
+  font-size: max(min(15vw, 15vh), 4rem);
   font-weight: lighter;
   line-height: 1;
 }
@@ -129,6 +142,25 @@ small {
   font-size: 1.25rem;
   font-weight: 200;
   animation: slide-up 1s ease forwards;
+}
+
+aside {
+  background: var(--surface2);
+  width: fit-content;
+  border-radius: 3ch;
+  display: grid;
+  justify-items: start;
+  gap: 3ch;
+  padding: 3ch 4ch;
+  margin-inline: auto;
+
+  & h5 {
+    color: var(--text2);
+  }
+
+  & > button {
+    justify-self: end;
+  }
 }
 
 @keyframes slide-up {

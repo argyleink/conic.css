@@ -5,7 +5,7 @@
   border: var(--swatch-border) solid hsl(0 0% 100% / 25%);
   aspect-ratio: 1;
   transition: aspect-ratio .5s ease;
-  box-shadow: 0 20px 100px -30px var(--shadow, gray);
+  box-shadow: 0 20px 100px -45px var(--shadow, gray);
 
   &:focus {
     outline-style: solid;
