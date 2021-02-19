@@ -66,7 +66,10 @@ export default class ConicGradient extends HTMLElement {
 
     return `
       <figure>
-        <picture tabindex=0 class="${conicSwatch}" style="background: ${this.cleanSyntax(gradient)}; --shadow: ${shadow};"></picture>
+        <picture 
+          tabindex=0 class="${conicSwatch}" 
+          style="background: ${this.cleanSyntax(gradient)} border-box; --shadow: ${shadow};"
+        ></picture>
         <figcaption>
           ${colors.map(color => `
             <span class="${miniSwatch}">

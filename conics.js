@@ -7,7 +7,7 @@ const CONICS = [
         from 180deg at bottom left,
         deeppink,
         rebeccapurple
-      ) border-box`,
+      )`,
     shadow: `deeppink`,
   },
   {
@@ -18,7 +18,7 @@ const CONICS = [
         from 90deg at bottom right,
         cyan, 
         rebeccapurple
-      ) border-box`,
+      )`,
     shadow: 'cyan',
   },
   {
@@ -29,7 +29,7 @@ const CONICS = [
         from 180deg at bottom center,
         lightblue, 
         white
-      ) border-box`,
+      )`,
     shadow: 'lightblue',
   },
   {
@@ -40,7 +40,7 @@ const CONICS = [
         from 0deg at bottom left,
         deeppink, 
         cyan
-      ) border-box`,
+      )`,
     shadow: 'deeppink',
   },
   {
@@ -52,7 +52,7 @@ const CONICS = [
         deeppink, 
         cyan,
         rebeccapurple
-      ) border-box`,
+      )`,
     shadow: 'cyan',
   },
   {
@@ -63,7 +63,7 @@ const CONICS = [
         from 0deg at top right,
         lime, 
         cyan
-      ) border-box`,
+      )`,
     shadow: 'cyan',
   },
   {
@@ -74,7 +74,7 @@ const CONICS = [
         from -90deg at top left,
         black, 
         white
-      ) border-box`,
+      )`,
     shadow: 'gray',
   },
   {
@@ -85,7 +85,7 @@ const CONICS = [
         from 0deg at top right,
         slategray, 
         white
-      ) border-box`,
+      )`,
     shadow: 'slategray',
   },
   {
@@ -96,7 +96,7 @@ const CONICS = [
         from 180deg at 50% 110%,
         white, 
         orange
-      ) border-box`,
+      )`,
     shadow: 'orange',
   },
   {
@@ -107,7 +107,7 @@ const CONICS = [
           from 180deg at center left,
           lime, 
           cyan
-        ) border-box`,
+        )`,
       shadow: 'cyan',
   },
   {
@@ -118,7 +118,7 @@ const CONICS = [
         from -90deg at 50% -25%,
         blue, 
         blueviolet
-      ) border-box`,
+      )`,
     shadow: 'blue',
   },
   {
@@ -129,7 +129,7 @@ const CONICS = [
         from 180deg at top right,
         darkseagreen, 
         darkslategray
-      ) border-box`,
+      )`,
     shadow: 'darkseagreen',
   },
   {
@@ -140,7 +140,7 @@ const CONICS = [
         from 0deg at top right,
         lightcyan, 
         lightblue
-      ) border-box`,
+      )`,
     shadow: 'lightcyan',
   },
   {
@@ -151,7 +151,7 @@ const CONICS = [
         from -135deg at -10% center,
         orange, 
         hotpink
-      ) border-box`,
+      )`,
     shadow: 'hotpink',
   },
   {
@@ -162,7 +162,7 @@ const CONICS = [
         from -90deg at 50% 105%,
         white, 
         orchid
-      ) border-box`,
+      )`,
     shadow: 'orchid',
   },
   {
@@ -173,7 +173,7 @@ const CONICS = [
         from -90deg at 25% 105%,
         red, 
         blue
-      ) border-box`,
+      )`,
     shadow: 'blue',
   },
   {
@@ -184,7 +184,7 @@ const CONICS = [
         from -90deg at bottom center,
         papayawhip, 
         peachpuff
-      ) border-box`,
+      )`,
     shadow: 'peachpuff',
   },
   {
@@ -195,7 +195,7 @@ const CONICS = [
         from -270deg at 50% -5%,
         yellow, 
         yellowgreen
-      ) border-box`,
+      )`,
     shadow: 'yellowgreen',
   },
   {
@@ -206,7 +206,7 @@ const CONICS = [
         from -90deg at 75% -25%,
         sienna, 
         purple
-      ) border-box`,
+      )`,
     shadow: 'purple',
   },
   {
@@ -217,7 +217,7 @@ const CONICS = [
         from -270deg at 110% 50%,
         cadetblue, 
         darkgreen
-      ) border-box`,
+      )`,
     shadow: 'cadetblue',
   },
   {
@@ -228,7 +228,7 @@ const CONICS = [
         from -270deg at 75% 110%,
         fuchsia, 
         floralwhite
-      ) border-box`,
+      )`,
     shadow: 'fuchsia',
   },
 ]
