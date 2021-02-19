@@ -115,7 +115,7 @@ const CONICS = [
     hex: ['#8a2be2', '#00f'],
     gradient: `
       conic-gradient(
-        from -90deg at top center,
+        from -90deg at 50% -25%,
         blue, 
         blueviolet
       ) border-box`,
@@ -199,15 +199,37 @@ const CONICS = [
     shadow: 'yellowgreen',
   },
   {
-    colors: ['sienna', 'purple'],
+    colors: ['purple', 'sienna'],
     hex: ['#a0522d', '#800080'],
     gradient: `
       conic-gradient(
-        from -270deg at top,
+        from -90deg at 75% -25%,
         sienna, 
         purple
       ) border-box`,
     shadow: 'purple',
+  },
+  {
+    colors: ['cadetblue', 'darkgreen'],
+    hex: ['#5f9ea0', '#006400'],
+    gradient: `
+      conic-gradient(
+        from -270deg at 110% 50%,
+        cadetblue, 
+        darkgreen
+      ) border-box`,
+    shadow: 'cadetblue',
+  },
+  {
+    colors: ['fuchsia', 'floralwhite'],
+    hex: ['#f0f', '#fffaf0'],
+    gradient: `
+      conic-gradient(
+        from -270deg at 75% 110%,
+        fuchsia, 
+        floralwhite
+      ) border-box`,
+    shadow: 'fuchsia',
   },
 ]
 
