@@ -19,6 +19,12 @@
       aspect-ratio: 16/9;
     }
   }
+
+  @supports not (aspect-ratio: 1) {
+    & {
+      height: 240px;
+    }
+  }
 }
 
 .mini-swatch {
@@ -28,10 +34,16 @@
   & > i {
     flex-shrink: 0;
     width: 2ch;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1;
     background-color: var(--color, transparent);
     border-radius: 50%;
     box-shadow: inset 0 0 0 1px hsl(0deg 0% 50% / 75%);
+
+    @supports not (aspect-ratio: 1) {
+      & {
+        height: 2ch;
+      }
+    }
   }
 
   @nest figcaption > &:nth-of-type(even) {

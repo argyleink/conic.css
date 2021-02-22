@@ -106,7 +106,7 @@ header {
 
   & > h1 {
     background: conic-gradient(
-      from var(--conicAngle) at 50% -200%, 
+      from 220deg at 50% -200%, 
       white, blue, rebeccapurple, red, hotpink, white
     ) border-box;
     -webkit-background-clip: text;
@@ -114,6 +114,17 @@ header {
 
     @media (prefers-reduced-motion: no-preference) {
       animation: magic 7s ease infinite forwards;
+    }
+
+    @supports (background: paint(something)) {
+      & {
+        background: conic-gradient(
+          from var(--conicAngle) at 50% -200%, 
+          white, blue, rebeccapurple, red, hotpink, white
+        ) border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
     }
   }
 }
@@ -161,6 +172,13 @@ aside {
 
   & > button {
     justify-self: end;
+  }
+
+  @supports not (margin-inline: auto) {
+    & {
+      margin-inline-start: auto;
+      margin-inline-end: auto;
+    }
   }
 }
 
