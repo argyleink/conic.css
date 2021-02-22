@@ -231,6 +231,17 @@ const CONICS = [
       )`,
     shadow: 'fuchsia',
   },
+  {
+    colors: ['midnightblue', 'lawngreen'],
+    hex: ['#191970', '#7cfc00'],
+    gradient: `
+      conic-gradient(
+        from -270deg at 75% 110%,
+        midnightblue, 
+        lawngreen
+      ) border-box`,
+    shadow: 'lawngreen',
+  },
 ]
 
 export default CONICS
