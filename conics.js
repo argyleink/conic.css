@@ -242,6 +242,17 @@ const CONICS = [
       ) border-box`,
     shadow: 'lawngreen',
   },
+  {
+    colors: ['snow', 'white'],
+    hex: ['#fffafa', '#fff'],
+    gradient: `
+      conic-gradient(
+        from 0deg at 0% 0%,
+        snow, 
+        white
+      ) border-box`,
+    shadow: 'white',
+  },
 ]
 
 export default CONICS
