@@ -30,7 +30,7 @@ const CONICS = [
         mediumvioletred, 
         gold,
         mediumvioletred
-      ) border-box`,
+      )`,
     shadow: 'mediumvioletred',
   },
   {
@@ -240,7 +240,7 @@ const CONICS = [
         from -270deg at 75% 110%,
         midnightblue, 
         lawngreen
-      ) border-box`,
+      )`,
     shadow: 'lawngreen',
   },
   {
@@ -251,7 +251,7 @@ const CONICS = [
         from 0deg at 0% 0%,
         snow, 
         white
-      ) border-box`,
+      )`,
     shadow: 'white',
   },
   {
