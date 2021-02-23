@@ -1,16 +1,5 @@
 const CONICS = [
   {
-    colors: ['deeppink', 'rebeccapurple'],
-    hex: ['#ff1493', '#639'],
-    gradient: `
-      conic-gradient(
-        from 180deg at bottom left,
-        deeppink,
-        rebeccapurple
-      )`,
-    shadow: `deeppink`,
-  },
-  {
     colors: ['cyan', 'rebeccapurple'],
     hex: ['#0ff', '#639'],
     gradient: `
@@ -33,6 +22,18 @@ const CONICS = [
     shadow: 'lightblue',
   },
   {
+    colors: ['mediumvioletred', 'gold'],
+    hex: ['#c71585', '#ffd700'],
+    gradient: `
+      conic-gradient(
+        from 90deg at 40% -25%,
+        mediumvioletred, 
+        gold,
+        mediumvioletred
+      ) border-box`,
+    shadow: 'mediumvioletred',
+  },
+  {
     colors: ['deeppink', 'cyan'],
     hex: ['#ff1493', '#0ff'],
     gradient: `
@@ -44,16 +45,15 @@ const CONICS = [
     shadow: 'deeppink',
   },
   {
-    colors: ['deeppink', 'cyan', 'rebeccapurple'],
-    hex: ['#ff1493', '#0ff', '#639'],
+    colors: ['white', 'black'],
+    hex: ['#000', '#fff'],
     gradient: `
       conic-gradient(
-        from -180deg at bottom right,
-        deeppink, 
-        cyan,
-        rebeccapurple
+        from -90deg at top left,
+        black, 
+        white
       )`,
-    shadow: 'cyan',
+    shadow: 'gray',
   },
   {
     colors: ['cyan', 'lime'],
@@ -67,15 +67,16 @@ const CONICS = [
     shadow: 'cyan',
   },
   {
-    colors: ['white', 'black'],
-    hex: ['#000', '#fff'],
+    colors: ['deeppink', 'cyan', 'rebeccapurple'],
+    hex: ['#ff1493', '#0ff', '#639'],
     gradient: `
       conic-gradient(
-        from -90deg at top left,
-        black, 
-        white
+        from -180deg at bottom right,
+        deeppink, 
+        cyan,
+        rebeccapurple
       )`,
-    shadow: 'gray',
+    shadow: 'cyan',
   },
   {
     colors: ['slategray', 'white'],
@@ -252,6 +253,17 @@ const CONICS = [
         white
       ) border-box`,
     shadow: 'white',
+  },
+  {
+    colors: ['deeppink', 'rebeccapurple'],
+    hex: ['#ff1493', '#639'],
+    gradient: `
+      conic-gradient(
+        from 180deg at bottom left,
+        deeppink,
+        rebeccapurple
+      )`,
+    shadow: `deeppink`,
   },
 ]
 
