@@ -116,14 +116,16 @@ header {
       animation: magic 7s ease infinite forwards;
     }
 
-    @supports (background: paint(something)) and not (prefers-reduced-motion: reduce) {
-      & {
-        background: conic-gradient(
-          from var(--conicAngle) at 50% -200%, 
-          white, blue, rebeccapurple, red, hotpink, white
-        ) border-box;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+    @supports (background: paint(something)) {
+      @media (prefers-reduced-motion: no-preference) {
+        & {
+          background: conic-gradient(
+            from var(--conicAngle) at 50% -200%, 
+            white, blue, rebeccapurple, red, hotpink, white
+          ) border-box;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
       }
     }
   }
