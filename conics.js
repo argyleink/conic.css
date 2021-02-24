@@ -169,9 +169,9 @@ const CONICS = [
     hex: ['#f00', '#00f'],
     gradient: `
       conic-gradient(
-        from -90deg at 25% 105%,
-        red, 
-        blue
+        from -90deg at 25% 115%,
+        #ff0000, #ff0066, #ff00cc, #cc00ff, #6600ff, 
+        #0000ff, #0000ff, #0000ff, #0000ff
       )`,
     shadow: 'blue',
   },
