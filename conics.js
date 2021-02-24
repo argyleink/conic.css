@@ -27,9 +27,8 @@ const CONICS = [
     gradient: `
       conic-gradient(
         from 90deg at 40% -25%,
-        mediumvioletred, 
-        gold,
-        mediumvioletred
+        #ffd700, #f79d03, #ee6907, #e6390a, #de0d0d, #d61039, #cf1261, #c71585, 
+        #cf1261, #d61039, #de0d0d, #ee6907, #f79d03, #ffd700, #ffd700, #ffd700
       )`,
     shadow: 'mediumvioletred',
   },
@@ -150,8 +149,7 @@ const CONICS = [
     gradient: `
       conic-gradient(
         from -135deg at -10% center,
-        orange, 
-        hotpink
+        #ffa500, #ff7715, #ff522a, #ff3f47, #ff5482, #ff69b4
       )`,
     shadow: 'hotpink',
   },
