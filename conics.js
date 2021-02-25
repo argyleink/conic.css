@@ -44,6 +44,17 @@ const CONICS = [
     shadow: 'deeppink',
   },
   {
+    colors: ['paleturquoise', 'orangered'],
+    hex: ['#afeeee', '#ff4500'],
+    gradient: `
+      conic-gradient(
+        from 90deg at 25% -10%, 
+        #ff4500, #d3f340, #7bee85, #afeeee,
+        #7bee85, #d3f340, #ff4500
+      )`,
+    shadow: `paleturquoise`,
+  },
+  {
     colors: ['white', 'black'],
     hex: ['#000', '#fff'],
     gradient: `
@@ -133,6 +144,16 @@ const CONICS = [
     shadow: 'darkseagreen',
   },
   {
+    colors: ['#222', '#111'],
+    hex: ['#111', '#222'],
+    gradient: `
+      conic-gradient(
+        from 90deg at 50% 0%, 
+        #111, 50%, #222, #111
+      )`,
+    shadow: `#333`,
+  },
+  {
     colors: ['lightcyan', 'lightblue'],
     hex: ['#e0ffff', '#add8e6'],
     gradient: `
@@ -209,6 +230,17 @@ const CONICS = [
     shadow: 'purple',
   },
   {
+    colors: ['indigo', 'lightseagreen'],
+    hex: ['#4b0082', '#20b2aa'],
+    gradient: `
+      conic-gradient(
+        from 90deg at 50% 125%, 
+        #20b2aa, #135da5, #0d0895, #4b0082,
+        #4b0082, #0d0895, #135da5, #20b2aa
+      )`,
+    shadow: `lightseagreen`,
+  },
+  {
     colors: ['cadetblue', 'darkgreen'],
     hex: ['#5f9ea0', '#006400'],
     gradient: `
@@ -242,17 +274,6 @@ const CONICS = [
     shadow: 'lawngreen',
   },
   {
-    colors: ['snow', 'white'],
-    hex: ['#fffafa', '#fff'],
-    gradient: `
-      conic-gradient(
-        from 0deg at 0% 0%,
-        snow, 
-        white
-      )`,
-    shadow: 'white',
-  },
-  {
     colors: ['deeppink', 'rebeccapurple'],
     hex: ['#ff1493', '#639'],
     gradient: `
@@ -262,6 +283,29 @@ const CONICS = [
         rebeccapurple
       )`,
     shadow: `deeppink`,
+  },
+  {
+    colors: ['navy', 'lime'],
+    hex: ['#000080', '#0f0'],
+    gradient: `
+      conic-gradient(
+        from 90deg at 50% 125%, 
+        #1f005c, #003298, #005ac6, #007fdc, #00a2d3, #00c4ae, 
+        #00e474, #00ff00, #1f005c, #003298, #005ac6, #007fdc, 
+        #00a2d3, #00c4ae, #00e474, #00ff00
+      )`,
+    shadow: `navy`,
+  },
+  {
+    colors: ['snow', 'white'],
+    hex: ['#fffafa', '#fff'],
+    gradient: `
+      conic-gradient(
+        from 0deg at 0% 0%,
+        snow, 
+        white
+      )`,
+    shadow: 'white',
   },
 ]
 
