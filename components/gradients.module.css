@@ -7,8 +7,12 @@
   gap: 10vmin;
   padding: 5vmin;
 
-  @media (width > 600px) {
-    & { --widest: 240px; }
+  @media (width > 240px) {
+    & { --widest: 40%; }
+  }
+
+  @media (width > 845px) {
+    & { --widest: 30%; }
   }
 
   @media (width > 845px) {

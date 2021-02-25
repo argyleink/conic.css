@@ -46,7 +46,15 @@
     }
   }
 
-  @nest figcaption > &:nth-of-type(even) {
-    flex-direction: row-reverse;
+  @media (orientation: landscape) {
+    @nest figcaption > &:nth-of-type(even) {
+      flex-direction: row-reverse;
+    }
+  }
+
+  @media (width <= 320px) {
+    & {
+      display: none;
+    }
   }
 }
