@@ -1,6 +1,6 @@
 import confetti from 'canvas-confetti'
 import Noty from 'noty'
-import { conicSwatch, miniSwatch } from './gradient.module.css'
+import { conicGradient, conicSwatch, miniSwatch } from './gradient.module.css'
 import CONICS from '../conics.js'
 
 const {matches:motionOK} = window.matchMedia('prefers-reduced-motion: no-preference')
@@ -76,7 +76,7 @@ export default class ConicGradient extends HTMLElement {
     const { gradient, shadow, colors } = this.conic
 
     return `
-      <figure>
+      <figure class="${conicGradient}">
         <picture 
           tabindex=0 class="${conicSwatch}" 
           style="background: ${this.cleanSyntax(gradient)} border-box; --shadow: ${shadow};"

@@ -1,6 +1,13 @@
+.conic-gradient {
+  --border-darkness: 100%;
+
+  @media (prefers-color-scheme: light) {
+    --border-darkness: 0%;
+  }
+}
+
 .conic-swatch {
   --swatch-border: 5px;
-  --border-darkness: 100%;
 
   border-radius: 25px;
   border: var(--swatch-border) solid hsl(0 0% var(--border-darkness) / 25%);
@@ -13,10 +20,6 @@
     outline-style: solid;
     outline-offset: 1vmin;
     outline-color: var(--shadow, gray);
-  }
-
-  @media (prefers-color-scheme: light) {
-    --border-darkness: 0%;
   }
 
   @media (orientation: landscape) {
@@ -48,7 +51,7 @@
     aspect-ratio: 1;
     background-color: var(--color, transparent);
     border-radius: 50%;
-    box-shadow: inset 0 0 0 1px hsl(0deg 0% 50% / 75%);
+    box-shadow: inset 0 0 0 1px hsl(0deg 0% var(--border-darkness) / 25%);
 
     @supports not (aspect-ratio: 1) {
       & {
