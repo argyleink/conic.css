@@ -49,8 +49,7 @@ const CONICS = [
     gradient: `
       conic-gradient(
         from 90deg at 25% -10%, 
-        #ff4500, #d3f340, #7bee85, #afeeee,
-        #7bee85, #d3f340, #ff4500
+        #ff4500, #d3f340, #7bee85, #afeeee, #7bee85
       )`,
     shadow: `paleturquoise`,
   },
