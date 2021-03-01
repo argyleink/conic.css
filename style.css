@@ -203,7 +203,8 @@ aside {
 }
 
 .github-corner {
-  fill: var(--brand); 
+  fill: var(--brand);
+  fill: url(#octocat-gradient); 
   color: var(--surface); 
   
   &:hover .octo-arm {
