@@ -201,3 +201,8 @@ aside {
     transform: translateY(-.5ex);
   }
 }
+
+.github-corner {
+  fill: var(--brand); 
+  color: var(--surface); 
+}
