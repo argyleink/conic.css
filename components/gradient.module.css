@@ -1,8 +1,9 @@
 .conic-swatch {
   --swatch-border: 5px;
+  --border-darkness: 100%;
 
   border-radius: 25px;
-  border: var(--swatch-border) solid hsl(0 0% 100% / 25%);
+  border: var(--swatch-border) solid hsl(0 0% var(--border-darkness) / 25%);
   aspect-ratio: 1;
   transition: aspect-ratio .5s ease;
   box-shadow: 0 20px 100px -45px var(--shadow, gray);
@@ -14,6 +15,10 @@
     outline-color: var(--shadow, gray);
   }
 
+  @media (prefers-color-scheme: light) {
+    --border-darkness: 0%;
+  }
+
   @media (orientation: landscape) {
     & {
       aspect-ratio: 16/9;
@@ -23,6 +28,12 @@
   @supports not (aspect-ratio: 1) {
     & {
       height: 240px;
+    }
+
+    @media (width <= 720px) {
+      & {
+        height: 120px;
+      }
     }
   }
 }

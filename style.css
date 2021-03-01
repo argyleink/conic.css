@@ -112,6 +112,17 @@ header {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
+    @media (prefers-color-scheme: light) {
+      & {
+        background: conic-gradient(
+          from 220deg at 50% -200%, 
+          rebeccapurple, red, hotpink
+        ) border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+
     @media (prefers-reduced-motion: no-preference) {
       animation: magic 7s ease infinite forwards;
     }
