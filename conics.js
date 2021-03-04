@@ -37,7 +37,7 @@ const CONICS = [
     hex: ['#ff1493', '#0ff'],
     gradient: `
       conic-gradient(
-        from 0deg at bottom left,
+        at bottom left,
         deeppink, 
         cyan
       )`,
@@ -69,7 +69,7 @@ const CONICS = [
     hex: ['#0ff', '#0f0'],
     gradient: `
       conic-gradient(
-        from 0deg at top right,
+        at top right,
         lime, 
         cyan
       )`,
@@ -92,7 +92,7 @@ const CONICS = [
     hex: ['#708090', '#fff'],
     gradient: `
       conic-gradient(
-        from 0deg at top right,
+        at top right,
         slategray, 
         white
       )`,
@@ -157,7 +157,7 @@ const CONICS = [
     hex: ['#e0ffff', '#add8e6'],
     gradient: `
       conic-gradient(
-        from 0deg at top right,
+        at top right,
         lightcyan, 
         lightblue
       )`,
@@ -300,7 +300,7 @@ const CONICS = [
     hex: ['#fffafa', '#fff'],
     gradient: `
       conic-gradient(
-        from 0deg at 0% 0%,
+        at 0% 0%,
         snow, 
         white
       )`,
