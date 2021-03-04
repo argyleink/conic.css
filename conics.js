@@ -320,6 +320,16 @@ const CONICS = [
       )`,
     shadow: '#82b0ff',
   },
+  {
+    colors: ['#b78cf7', '#ff7c94', '#ffcf0d'],
+    hex: ['#b78cf7', '#ff7c94', '#ffcf0d'],
+    gradient: `
+      conic-gradient(
+        at 125% 50%,
+        #b78cf7, #ff7c94, #ffcf0d, #ff7c94, #b78cf7
+      )`,
+    shadow: '#ffcf0d',
+  },
 ]
 
 export default CONICS
