@@ -68,7 +68,7 @@ export default class ConicGradient extends HTMLElement {
     return conic
       .trim()
       .replace(/\s+/g, ' ')
-      .replace(' from', 'from')
+      .replace('( ', '(')
       .replace(' )', ')')
   }
 

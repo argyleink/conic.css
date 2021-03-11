@@ -3,14 +3,20 @@
 
 :root {
   --surface: lch(10 0 0);
-  --surface2: lch(5 0 0);
+  --surface2: conic-gradient(
+    at bottom left,
+    hsl(200, 5%, 20%),
+    hsl(0, 0%, 30%));
   --text: lch(95 0 0);
   --text2: lch(80 0 0);
   --brand: lch(64 40 347);
 
   @media (prefers-color-scheme: light) {
-    --surface: lch(98 0 0);
-    --surface2: lch(92 0 0);
+    --surface: lch(100 0 0);
+    --surface2:  conic-gradient(
+        at bottom left,
+        hsl(200, 5%, 95%),
+        hsl(200, 15%, 80%));
     --text: lch(10 0 0);
     --text2: lch(30 0 0);
     --brand: lch(65 64 350);
@@ -34,22 +40,8 @@ body {
   box-sizing: border-box;
 
   color: var(--text);
-  background: conic-gradient(
-    from -270deg at bottom left,
-    hsl(200 15% 15%),
-    hsl(0 0% 2%)
-  ) border-box fixed;
+  background: var(--surface);
   font-family: system-ui, sans-serif;
-
-  @media (prefers-color-scheme: light) {
-    & {
-      background: conic-gradient(
-        from -270deg at bottom left,
-        hsl(200 15% 85%),
-        hsl(0 0% 98%)
-      ) border-box fixed;
-    }
-  }
 }
 
 body,p,ul,dl,dd,dt,figure,
@@ -105,9 +97,10 @@ header {
   padding: 15vmin 5vmin 5vmin;
 
   & > h1 {
+    --shine: white;
     background: conic-gradient(
       from 220deg at 50% -200%, 
-      white, blue, rebeccapurple, red, hotpink, white
+      var(--shine), blue, rebeccapurple, red, hotpink, var(--shine)
     ) border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -130,9 +123,10 @@ header {
     @supports (background: paint(something)) {
       @media (prefers-reduced-motion: no-preference) {
         & {
+          --shine: lch(85 0 0);
           background: conic-gradient(
             from var(--conicAngle) at 50% -200%, 
-            white, blue, rebeccapurple, red, hotpink, white
+            var(--shine), blue, rebeccapurple, red, hotpink, var(--shine)
           ) border-box;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;

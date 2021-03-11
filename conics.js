@@ -15,7 +15,7 @@ const CONICS = [
     hex: ['#add8e6', '#fff'],
     gradient: `
       conic-gradient(
-        from 180deg at bottom center,
+        from .5turn at bottom center,
         lightblue, 
         white
       )`,
@@ -37,7 +37,7 @@ const CONICS = [
     hex: ['#ff1493', '#0ff'],
     gradient: `
       conic-gradient(
-        from 0deg at bottom left,
+        at bottom left,
         deeppink, 
         cyan
       )`,
@@ -69,7 +69,7 @@ const CONICS = [
     hex: ['#0ff', '#0f0'],
     gradient: `
       conic-gradient(
-        from 0deg at top right,
+        at top right,
         lime, 
         cyan
       )`,
@@ -80,7 +80,7 @@ const CONICS = [
     hex: ['#ff1493', '#0ff', '#639'],
     gradient: `
       conic-gradient(
-        from -180deg at bottom right,
+        from -.5turn at bottom right,
         deeppink, 
         cyan,
         rebeccapurple
@@ -92,7 +92,7 @@ const CONICS = [
     hex: ['#708090', '#fff'],
     gradient: `
       conic-gradient(
-        from 0deg at top right,
+        at top right,
         slategray, 
         white
       )`,
@@ -103,7 +103,7 @@ const CONICS = [
     hex: ['#fff', '#ffa500'],
     gradient: `
       conic-gradient(
-        from 180deg at 50% 110%,
+        from .5turn at 50% 110%,
         white, 
         orange
       )`,
@@ -114,7 +114,7 @@ const CONICS = [
       hex: ['#0f0', '#0ff'],
       gradient: `
         conic-gradient(
-          from 180deg at center left,
+          from .5turn at center left,
           lime, 
           cyan
         )`,
@@ -136,7 +136,7 @@ const CONICS = [
     hex: ['#8fbc8f', '#2f4f4f'],
     gradient: `
       conic-gradient(
-        from 180deg at top right,
+        from .5turn at top right,
         darkseagreen, 
         darkslategray
       )`,
@@ -157,7 +157,7 @@ const CONICS = [
     hex: ['#e0ffff', '#add8e6'],
     gradient: `
       conic-gradient(
-        from 0deg at top right,
+        at top right,
         lightcyan, 
         lightblue
       )`,
@@ -277,7 +277,7 @@ const CONICS = [
     hex: ['#ff1493', '#639'],
     gradient: `
       conic-gradient(
-        from 180deg at bottom left,
+        from .5turn at bottom left,
         deeppink,
         rebeccapurple
       )`,
@@ -300,11 +300,35 @@ const CONICS = [
     hex: ['#fffafa', '#fff'],
     gradient: `
       conic-gradient(
-        from 0deg at 0% 0%,
+        at 0% 0%,
         snow, 
         white
       )`,
     shadow: 'white',
+  },
+  {
+    colors: ['#00c476', '#82b0ff'],
+    hex: ['#00c476', '#82b0ff'],
+    gradient: `
+      conic-gradient(
+        from .5turn at 0% 0%, 
+        #00c476, 
+        10%, 
+        #82b0ff, 
+        90%, 
+        #00c476
+      )`,
+    shadow: '#82b0ff',
+  },
+  {
+    colors: ['#b78cf7', '#ff7c94', '#ffcf0d'],
+    hex: ['#b78cf7', '#ff7c94', '#ffcf0d'],
+    gradient: `
+      conic-gradient(
+        at 125% 50%,
+        #b78cf7, #ff7c94, #ffcf0d, #ff7c94, #b78cf7
+      )`,
+    shadow: '#ffcf0d',
   },
 ]
 
